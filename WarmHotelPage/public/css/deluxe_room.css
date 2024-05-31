@@ -1,0 +1,575 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* font */
+.alumni-sans pinstripe-regular {
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.alumni-sans pinstripe-regular-italic {
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+body {
+  background-color: white;
+}
+
+.big1-components {
+  background-image: url(./img/big1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+
+/* header-i mas logo ev navigation*/
+.header {
+  background-color: #f5f5f5;
+  padding: 0 70px 0 50px;
+  width: 100%;
+  z-index: 1000;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-content a:nth-child(1) {
+  text-decoration: none;
+}
+
+.logo-name {
+  display: flex;
+  margin-top: 15px;
+}
+
+.logo-name h1 {
+  font-size: 60px;
+  color: #463e31;
+  font-weight: lighter;
+  margin-right: 10px;
+}
+
+.line {
+  border-left: 3px solid #463e31;
+  height: 45px;
+  margin-top: 12px;
+}
+
+.logo-name p {
+  color: #463e31;
+  font-size: 20px;
+  margin-left: 10px;
+  font-weight: lighter;
+  margin-top: 12px;
+}
+
+.header-menu ul {
+  display: flex;
+  list-style-type: none;
+  margin-top: 50px;
+}
+
+.header-content ul li a {
+  text-decoration: none;
+  margin: 20px;
+  color: #463e31;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+  letter-spacing: 2px;
+}
+
+.header-content ul li {
+  transition: 0.5s;
+}
+
+.header-menu ul li ul {
+  position: absolute;
+  display: none;
+  z-index: 1000;
+  background-color: #f5f5f5;
+  margin-top: 0px;
+}
+
+.header-menu ul li ul li {
+  padding-bottom: 3px;
+  transition: 0.5s;
+}
+
+.header-menu ul li ul li:hover {
+  background-color: #463e31;
+}
+
+.header-menu ul li ul li a {
+  font-size: 25px;
+  color: #463e31;
+}
+
+.header-menu ul li ul li a:hover {
+  color: #f1f1f1;
+}
+
+.header-menu ul li:hover ul {
+  display: block;
+}
+
+/* ------------------------- */
+/*hamburger menu*/
+.hamburger {
+  display: none;
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  display: none;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.header-menu2 ul li a {
+  font-size: 23px;
+}
+
+.header-menu2 ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-menu2 ul li {
+  width: 100%;
+  padding: 20px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.header-menu2 ul li:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.header-menu2 ul li ul {
+  position: absolute;
+  display: none;
+  z-index: 1000;
+  background-color: #f1f1f1;
+  margin-top: 20px;
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.arrow {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+@media (max-width: 1075px) {
+  .hamburger {
+    display: block;
+  }
+
+  .header-menu {
+    display: none;
+  }
+
+  .header-content {
+    justify-content: space-between;
+  }
+
+  .sidenav {
+    display: block;
+  }
+}
+
+/*111111111111111111111111111111111111111*/
+
+/* ptichkayi hamar */
+.arrow {
+  border: solid #463e31;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-bottom: 5px;
+  margin-left: 7px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+/*--------------------------  */
+
+.room-name {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.room-name h1 {
+  color: #463e31;
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+  font-size: 40px;
+  letter-spacing: 3px;
+}
+
+.room-photo {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.room-photo-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.room-photo-content img {
+  width: 70%;
+}
+
+/*facilities*/
+
+.room-facilities {
+  margin-top: 60px;
+  line-height: 40px;
+  margin-bottom: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.room-facilities-content {
+  width: 90%;
+}
+
+.fac-items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.room-facilities h4 {
+  color: #463e31;
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+  font-size: 40px;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+
+.facilities-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.fac-item-content li {
+  display: flex;
+  list-style: none;
+}
+
+.hidden-item {
+  display: flex;
+}
+
+.facilities-icon {
+  margin-top: 4px;
+  margin-right: 8px;
+}
+
+.fac-item-content p {
+  color: #463e31;
+}
+
+.fac-item-content h5 {
+  color: #463e31;
+  font-size: 30px;
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+  letter-spacing: 2px;
+}
+
+.fac-item-content button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #463e31;
+}
+
+.fac-item-content button .arrow {
+  margin-bottom: 2px;
+  margin-left: 4px;
+  border-width: 0 2px 2px 0;
+}
+
+#show-less-1 .arrow {
+  margin-left: 4px;
+  border-width: 0 2px 2px 0;
+  margin-bottom: -1px;
+}
+
+#show-less-2 .arrow {
+  margin-left: 4px;
+  border-width: 0 2px 2px 0;
+  margin-bottom: -1px;
+}
+
+#show-less-3 .arrow {
+  margin-left: 4px;
+  border-width: 0 2px 2px 0;
+  margin-bottom: -1px;
+}
+
+#show-less-4 .arrow {
+  margin-left: 4px;
+  border-width: 0 2px 2px 0;
+  margin-bottom: -1px;
+}
+
+#list-container {
+  overflow: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+/*-------------------------------*/
+
+/* footer */
+
+.footer {
+  width: 100%;
+}
+
+.footer-content {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.footer-info {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 40px;
+}
+
+.footer-content h4 {
+  color: #463e31;
+  font-size: 25px;
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+  letter-spacing: 2px;
+}
+
+.footer-nav a {
+  text-decoration: none;
+}
+
+.footer-nav h4:hover {
+  text-decoration: underline;
+}
+
+.footer-info ul {
+  list-style-type: none;
+}
+
+.footer-contact li {
+  display: flex;
+}
+
+.footer-contact-icon {
+  margin-right: 10px;
+  margin-top: 6px;
+}
+
+.footer-contact-icon img {
+  width: 20px;
+}
+
+.footer-line hr {
+  width: 90%;
+  color: #463e31;
+  border-width: 2px;
+}
+
+.footer-line {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.social-text {
+  margin-bottom: 10px;
+}
+
+.social-icons img {
+  width: 40px;
+  margin-right: 10px;
+  transition: transform 0.2s;
+}
+
+.social-icons img:hover {
+  transform: scale(0.8);
+}
+
+.footer-end {
+  background-color: #463e31;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-end h3 {
+  color: white;
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+  letter-spacing: 2px;
+}
+
+/* ------------------------------------------------------------ */
+/*slider*/
+
+.slider {
+  width: 1300px;
+  max-width: 100vw;
+  height: 700px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  margin-top: 40px;
+}
+
+.slider .list {
+  position: absolute;
+  width: max-content;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  transition: 1s;
+}
+
+.slider .list img {
+  width: 1300px;
+  max-width: 100vw;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider .buttons {
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider .buttons button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff5;
+  color: #fff;
+  border: none;
+  font-family: monospace;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.slider .dots {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  color: #fff;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.slider .dots li {
+  list-style: none;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  margin: 10px;
+  border-radius: 20px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.slider .dots li.active {
+  width: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .slider {
+    height: 400px;
+  }
+}
+
+/* --------------------------------------------------- */
